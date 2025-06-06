@@ -6,7 +6,7 @@ const profileRoutes = require("./routes/profile");
 
 
 const helpRoutes = require('./routes/helpRequests');
-const helpRoutes = require("./routes/helpRequests");
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
