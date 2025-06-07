@@ -1,9 +1,14 @@
 const mongoose = require('mongoose');
 
 const HelpRequestSchema = new mongoose.Schema({
-  name: String,
-  title: String,
-  description: String,
+  name: { type: String, required: true },
+  title: { type: String, required: true },
+  description: { type: String, required: true },
+  status: {
+    type: String,
+    enum: ["Open", "Resolved"],
+    default: "Open"
+  },
   createdAt: {
     type: Date,
     default: Date.now
