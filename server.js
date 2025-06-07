@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use('/api/requests', helpRoutes);
 app.use("/api/profile", profileRoutes);
-app.use("/api/requests", helpRoutes);
+
 
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
