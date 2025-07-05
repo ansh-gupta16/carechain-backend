@@ -4,6 +4,7 @@ const HelpRequestSchema = new mongoose.Schema({
   name: { type: String, required: true },
   title: { type: String, required: true },
   description: { type: String, required: true },
+  location: { type: String }, // Optional field
   status: {
     type: String,
     enum: ["Open", "Resolved"],
